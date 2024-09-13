@@ -47,13 +47,11 @@ def sorted_merge(left, right):
     else:
         return [right[0]] + sorted_merge(left, right[1:])
 
-array = [38, 27, 43, 3, 9, 82, 10]
-
-print("Sorted array:", merge_sort(array))
 
 
 
-#jeevan
+
+# Contributor @jeevan
 def bubble_sort(arr):
 
     for n in range(len(arr) - 1, 0, -1):
