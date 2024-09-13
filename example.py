@@ -117,3 +117,15 @@ num2 = int(input("Enter the second number: "))
 # Call the function and print the result
 print("The LCM of the provided two numbers is", calc_lcm(num1, num2))
 
+
+
+# Contributor @Vamshi
+
+def is_palindrome(word):
+    word = word.lower()
+    return word == word[::-1]
+
+# Getting user input
+word = input("Enter a word to check if it's a palindrome: ")
+print(f"Is '{word}' a palindrome? {is_palindrome(word)}")
+
