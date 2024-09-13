@@ -89,3 +89,31 @@ s = (p + q + r)/2
 # calculate the area  
 area_tri = (s*(s-p)*(s-q)*(s-r))*(0.5)  
 print('The area of the triangle is %0.2f' %area_tri)
+
+
+
+# Contributor @Lohith
+
+
+# Function to calculate LCM
+def calc_lcm(x, y):
+    if x > y:
+        greater = x
+    else:
+        greater = y
+
+    while True:
+        if (greater % x == 0) and (greater % y == 0):
+            lcm = greater
+            break
+        greater += 1
+
+    return lcm
+
+# Input from the user
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+
+# Call the function and print the result
+print("The LCM of the provided two numbers is", calc_lcm(num1, num2))
+
