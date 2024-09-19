@@ -154,3 +154,19 @@ print ("Sorted array")
 for i in range(len(A)):
     print(A[i],end=" ") 
 
+
+
+
+user_int = input("Enter an integer greater than 2")
+is_prime = true
+
+for i in range(2, user_int):
+ if user_int % i == 0:
+  is_prime = false
+  break
+
+if is_prime:
+ print("Given integer is prime")
+else:
+ print("Given Integer isn't prime")
+
