@@ -95,7 +95,7 @@ def is_palindrome(word):
 
 #contributor @ chaturth 
 # Python program for implementation of Selection Sort
-def selection_sort(arr):
+def selection_sort(A):
 	# Traverse through all array elements
 	for i in range(len(A)-1):
     
@@ -113,8 +113,8 @@ def selection_sort(arr):
 def isPrime(n):
 	is_prime = true
 
-	for i in range(2, user_int):
- 		if user_int % i == 0:
+	for i in range(2, n):
+ 		if n % i == 0:
   		is_prime = false
   		break
 
