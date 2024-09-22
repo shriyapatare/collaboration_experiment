@@ -125,53 +125,51 @@ def isPrime(n):
 
 #driver code by contributor @shriya
 int a = input("Enter the number corresponding to the operation to execute that operation:\n1. Add 2 numbers.\n2.Find the nth number in the Fibonacci series.\n3. Merge Sort an array.\n4. Bubble sort an array.\n5. Find the area of a triangle. \n6. Find LCM of 2 numbers.\n7. Check if a string if a palindrome.\n8. Selection sort an array.\n9. Find if a number is prime or not. ")
-switch(a):
-	case 1:
-		x = input("Enter first number")
-		y = input("Enter second number")
-		print("Sum of ", x, " and ", y, " is: ", add_numbers(x, y))
-		break
-	case 2:
-		x = input("Enter the number")
-		ans = funbonci(x)
-		print("The {x}th Fibonacci number is: {ans}")
-		break
-	case 3:
-		arr = list(map(int, input("Enter the array elements separated by space: ").split()))
-		merge_sort(arr)
-		print("Sorted array is: ", arr)
-		break
-	case 4:
-		arr = list(map(int, input("Enter the array elements separated by space: ").split()))
-                bubble_sort(arr)
-                print("Sorted array is: ", arr)
-                break
-	case 5: 
-		p = input("Enter first side:")
-		q = input("Enter second side:")
-		r = input("Enter third side:")
-		area = area_of_triangle(p, q, r)
-		print("Area of triangle is: {area}")
-		break
-	case 6:
-		x = input("Enter first number")
-		y = input("Enter second number")
-		lcm = calc_lcm(x, y)
-		print("The LCM of the provided two numbers is", lcm)
-		break
-	case 7:
-		word = input("Enter a word to check if it's a palindrome: ")
-		print(f"Is '{word}' a palindrome? {is_palindrome(word)}")
-		break
-	case 8: 
-		arr = list(map(int, input("Enter the array elements separated by space: ").split()))
-                selection_sort(arr)
-                print("Sorted array is: ", arr)
-                break
-	case 9: 
-		x  = input("Enter an integer greater than 2")
-		isPrime(x)
-		break
+if(a==1):
+	x = input("Enter first number")
+	y = input("Enter second number")
+	print("Sum of ", x, " and ", y, " is: ", add_numbers(x, y))
+
+elif(a==2):
+	x = input("Enter the number")
+	ans = funbonci(x)
+	print(f"The {x}th Fibonacci number is: {ans}")
+
+elif(a==3):
+	arr = list(map(int, input("Enter the array elements separated by space: ").split()))
+	merge_sort(arr)
+	print("Sorted array is: ", arr)
+
+elif(a==4):
+	arr = list(map(int, input("Enter the array elements separated by space: ").split()))
+        bubble_sort(arr)
+        print("Sorted array is: ", arr)
+
+elif(a==5):
+	p = input("Enter first side:")
+	q = input("Enter second side:")
+	r = input("Enter third side:")
+	area = area_of_triangle(p, q, r)
+	print(f"Area of triangle is: {area}")
+
+elif(a==6):
+	x = input("Enter first number")
+	y = input("Enter second number")
+	lcm = calc_lcm(x, y)
+	print("The LCM of the provided two numbers is", lcm)
+
+elif(a==7):
+	word = input("Enter a word to check if it's a palindrome: ")
+	print(f"Is '{word}' a palindrome? {is_palindrome(word)}")
+
+elif(a==8):
+	arr = list(map(int, input("Enter the array elements separated by space: ").split()))
+        selection_sort(arr)
+        print("Sorted array is: ", arr)
+	
+elif(a==9):
+	x  = input("Enter an integer greater than 2")
+	isPrime(x)
 
 
 
